@@ -1,0 +1,3 @@
+[submodule "TetrisGame"]
+	path = TetrisGame
+	url = git@github.com:GeorgeJegon/TetrisGame.git
