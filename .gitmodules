@@ -1,3 +1,6 @@
 [submodule "TetrisGame"]
 	path = TetrisGame
 	url = https://github.com/GeorgeJegon/TetrisGame.git
+[submodule "Projeto-Integrado"]
+	path = Projeto-Integrado
+	url = https://github.com/GeorgeJegon/Projeto-Integrado.git
