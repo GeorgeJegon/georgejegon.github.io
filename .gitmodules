@@ -6,4 +6,4 @@
 	url = https://github.com/GeorgeJegon/Projeto-Integrado.git
 [submodule "Estudo"]
 	path = Estudo
-	url = git@github.com:GeorgeJegon/Estudo.git
+	url = https://github.com/GeorgeJegon/Estudo.git
