@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+   body {
+    font-family: Arial;
+    font-size:  16px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/578538a1d1758e87ad545b70/1586214609762-JGEFKPWG7R756B3PYEDE/capa_site.png);
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+
+   .card {
+      background: #fff;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      max-width: 400px;
+      border: solid 3px #ccc;
+      margin: 30px auto 0;
+   }
+
+   .card .logo {
+    padding: 10px;
+    margin:  0 auto;
+    width:  100px;
+   }
+
+   .card .logo img {
+      width: 100px;
+   }
+
+   .card header {
+    margin-bottom: 10px;
+    border-bottom: solid 2px #ccc;
+    overflow:  hidden;
+   }
+
+   .card header .fa {
+    color: #c0c0c0;
+
+    font-size: 40px;
+    padding: 15px 20px;
+    display: inline-block;
+    position: relative;
+   }
+
+   .card header .fa-cog {
+    float: left;
+   }
+
+   .card header .fa-comments {
+    float: right;
+   }
+
+   .card main {
+    position: relative;
+    height: 470px;
+
+   }
+
+   .profile {
+     border:  solid 1px #ccc;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     box-shadow: 2px 2px 2px #ccc;
+     position: absolute;
+     height: 455px;
+     overflow: hidden;
+     top: 0;
+     left:  0;
+     margin: 10px;
+   }
+
+   .profile .brief {
+      padding: 15px;
+   }
+
+   .profile .photo img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+   }
+
+   .profile .brief {
+    background-color: #fff;
+   }
+
+   .profile .brief .name {
+    font-size: 20px;
+    font-weight: 400;
+   }
+
+   .profile .brief .name .age {
+    font-weight: 200;
+   }
+
+   .profile .brief .info {
+      color: #999;
+   }
+
+   .card footer {
+    padding: 15px 0 ;
+   }
+
+   .controls {
+      overflow: hidden;
+      width:  240px;
+      margin: 0 auto;
+   }
+
+   .controls .option {
+    width:  120px;
+    height: 120px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    border:  solid 8px #f0f0f0;
+    float:  left;
+   }
+
+   .controls .option.no {
+    font-size: 80px;
+    color: #ff695b;
+    padding: 10px 25px;
+   }
+
+   .controls .option.yes {
+    font-size: 60px;
+    color: #5de19c;
+    padding: 25px 23px;
+   }
+
+   .profile::before {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 15px;
+    font-size: 36px;
+    display: block;
+    border-style: solid;
+    border-width: 5px;
+    top: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+   }
+
+   .profile.nope::before {
+    border-color: #ff695b;
+    color: #ff695b;
+    transform: rotate(10deg);
+    content: "Nope";
+    right: 5px;
+   }
+
+   .profile.like::before {
+    border-color: #5de19c;
+    color: #5de19c;
+    content: "Like";
+    transform: rotate(-10deg);
+    left: 5px;
+   }
+
+   .profile.nope {
+     animation: 1s ease 0s forwards swipeLeft;
+   }
+
+   .profile.like {
+     animation: 1s ease 0s forwards swipeRight;
+   }
+
+   @keyframes swipeLeft {
+    from { transform: translate(0); }
+    to   { transform: translate(-100%,-100%); opacity: 0;}
+   }
+
+   @keyframes swipeRight {
+    from { transform: translate(0); }
+    to   { transform: translate(100%,100%); opacity: 0;}
+   }
+  </style>
+</head>
+<body>
+
+<section class="card">
+  <header>
+    <i class="fa fa-cog"></i>
+    <i class="fa fa-comments"></i>
+    <div class="logo"><img src="https://worldvectorlogo.com/logos/tinder-1.svg" alt="Tinder Logo" title="Tinder Logo" /></div>
+
+  </header>
+  <main>
+    <div class="profile">
+      <div class="photo">
+        <img src="images/profiles/ds-fuel-2.png" height="380" alt="">
+      </div>
+      <div class="brief">
+        <div class="name">Westside, <span clas="age">5</span></div>
+        <div class="info">Only natural ingredients, since 2016</div>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="photo">
+        <img src="images/profiles/24_7.jpg" alt="">
+      </div>
+      <div class="brief">
+        <div class="name">24/7, <span clas="age">3</span></div>
+        <div class="info">Meek Mill feat Ella Mai, since 2018</div>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="photo">
+        <img src="images/profiles/dont-tell-them.jpg" alt="">
+      </div>
+      <div class="brief">
+        <div class="name">Don't tell 'Em, <span clas="age">7</span></div>
+        <div class="info">Jeremih feat YG, since 2014</div>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="photo">
+        <img src="images/profiles/no-limit.jpg" alt="">
+      </div>
+      <div class="brief">
+        <div class="name">No Limit, <span clas="age">5</span></div>
+        <div class="info">Usher Baby feat Young Thug, since 2016</div>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="photo">
+        <img src="images/profiles/second-emotion.jpeg" alt="">
+      </div>
+      <div class="brief">
+        <div class="name">Second Emotion, <span clas="age">1</span></div>
+        <div class="info">Justin Bieber feat Travis Scott, since 2020</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="controls">
+      <div class="no option">
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="yes option">
+        <i class="fa fa-heart"></i>
+      </div>
+    </div>
+  </footer>
+</section>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script>
+  $(".controls .option").click(function(e){
+    let choosenElement = $(e.currentTarget);
+    let profileElement = $(".profile.current");
+    let nextProfileElement = profileElement.next(".profile");
+
+    if(choosenElement.hasClass("no")) {
+      profileElement.removeClass("like").addClass("nope");
+    } else if (choosenElement.hasClass("yes")) {
+      profileElement.removeClass("nope").addClass("like");
+    }
+
+    profileElement.removeClass("current");
+    nextProfileElement.addClass("current");
+  });
+
+  let profiles = $("main .profile")
+  let profilesCount = profiles.length;
+
+  profiles.each(function(index, profile) {
+    let zIndex = profilesCount - index;
+    let element = $(profile)
+
+    if (index === 0 ) { element.addClass("current"); }
+
+    element.css("zIndex", zIndex);
+  });
+
+</script>
+</body>
+</html>
